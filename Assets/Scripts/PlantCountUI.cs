@@ -8,6 +8,10 @@ public class PlantCountUI : MonoBehaviour
 
     public void UpdateSeeds (int seedsLeft, int seedsPlanted)
     {
+        if(_remainingText != null)
+            _remainingText.text = " " + seedsLeft;
+        if (_plantedText != null)
+            _plantedText.text = " " + seedsPlanted;
         
     }
 }
